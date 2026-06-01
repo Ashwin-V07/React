@@ -5,10 +5,11 @@ import useApi from './useApi'
 export default function Home() {
   let [n] = useApi()
   console.log(n);
-  
+  let d = import.meta.SDATA
   return (
     <>
-    <Link to={'/about'}>About</Link>
+      {d}
+      <Link to={'/about'}>About</Link>
     </>
   )
 }
